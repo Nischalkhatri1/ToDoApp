@@ -11,8 +11,10 @@
         android:theme="@style/AppTheme">
         <activity android:name=".addedittask.AddEditTaskActivity"
             android:label="Add a new Task"></activity>
-        <!--<activity android:name=".tasks.MainActivity">-->
-        <activity android:name=".tasks.MainActivity">
+
+       <activity android:name=".tasks.MainActivity" android:label="Main List" />
+        <activity android:name=".tasks.RegisterActivity" android:label="Register" />
+        <activity android:name=".tasks.LoginActivity"            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

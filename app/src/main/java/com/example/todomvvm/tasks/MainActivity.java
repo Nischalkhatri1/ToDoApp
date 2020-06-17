@@ -114,13 +114,13 @@ public class MainActivity extends AppCompatActivity implements TaskAdapter.ItemC
         getMenuInflater().inflate(R.menu.options_menu, menu);
         return true;
     }
-    /*private void logout() {
+   private void logout() {
 
         Intent intent = new Intent(MainActivity.this, LoginActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
         finish();
-    }*/
+    }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         Toast.makeText(this, "Selected Item: " +item.getTitle(), Toast.LENGTH_SHORT).show();
@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity implements TaskAdapter.ItemC
                 // do your code
                 return true;
             case R.id.logout:
-               // logout();
+             logout();
                 return true;
 
 
