@@ -2,25 +2,47 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.todomvvm">
 
-    <application
+       <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+          android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".addedittask.AddEditTaskActivity"
-            android:label="Add a new Task"></activity>
 
-       <activity android:name=".tasks.MainActivity" android:label="Main List" />
-        <activity android:name=".tasks.RegisterActivity" android:label="Register" />
-        <activity android:name=".tasks.LoginActivity"            >
+
+
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+
+        <activity
+            android:name=".tasks.TabsActivity"
+            android:label="@string/title_activity_tabs">
+
+        </activity>
+        <activity
+            android:name=".addedittask.AddEditTaskActivity"
+            android:label="Add a new Task" />
+        <activity
+            android:name=".tasks.MainActivity"
+            android:label="Main List" />
+        <activity
+            android:name=".tasks.RegisterActivity"
+            android:label="Register" />
+        <activity android:name=".tasks.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
+
+           <meta-data
+               android:name="preloaded_fonts"
+               android:resource="@array/preloaded_fonts" />
+
+       </application>
 
 </manifest>

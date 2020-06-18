@@ -121,12 +121,14 @@ public class MainActivity extends AppCompatActivity implements TaskAdapter.ItemC
         startActivity(intent);
         finish();
     }
+
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         Toast.makeText(this, "Selected Item: " +item.getTitle(), Toast.LENGTH_SHORT).show();
         switch (item.getItemId()) {
             case R.id.about:
-                // do your code
+                startActivity(new Intent(MainActivity.this, TabsActivity.class));
                 return true;
             case R.id.logout:
              logout();

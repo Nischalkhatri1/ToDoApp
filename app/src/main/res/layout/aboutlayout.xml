@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/bad_script"
+        android:gravity="center"
+        android:text="This is a todo anroid app. \n
+        ToDo App is simple and \n awesome app \n organize your tasks with very \n easy to use interface. ToDo can  help you to make list of your tasks \n .Also you set the priority \n for your tasks .you can add  make lists of tasks .To use this app first you have to complete registration process.  This a  simple and useful todo anroid app."
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="24sp" />
+</RelativeLayout>
